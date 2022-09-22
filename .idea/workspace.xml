@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="in the run of programme added the data of game">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Consoles/Consoles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ecrans/Ecran.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameCategorie/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Info/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IPosts.java" afterDir="false" />
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="getGames to get all the game by categorie">
+      <change afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Consoles/Consoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ecrans/Ecran.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Horaires/Horaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Info/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Info/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Uml/uml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/IPosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IPosts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -99,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="31165000" />
+      <workItem from="1663756333144" duration="46442000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1663756381892</created>
@@ -129,7 +126,91 @@
       <option name="project" value="LOCAL" />
       <updated>1663785607218</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="class console to manage all the console the game">
+      <created>1663805589496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805589496</updated>
+    </task>
+    <task id="LOCAL-00006" summary="class Ecran to manage all the Ecran the game">
+      <created>1663805607146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805607146</updated>
+    </task>
+    <task id="LOCAL-00007" summary="class Game to manage all the GAme the gameSpace">
+      <created>1663805658592</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805658592</updated>
+    </task>
+    <task id="LOCAL-00008" summary="initial class Horaires.java">
+      <created>1663805676980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805676980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="class to create all the propriete (quantity and name)">
+      <created>1663805731283</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805731283</updated>
+    </task>
+    <task id="LOCAL-00010" summary="interface to initial the method check to check stocket">
+      <created>1663805780448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805780448</updated>
+    </task>
+    <task id="LOCAL-00011" summary="main is a class global to stocket all the chause and run the code">
+      <created>1663805861120</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805861120</updated>
+    </task>
+    <task id="LOCAL-00012" summary="post is a class  to link all the consoles and Ecran and Game class in one class">
+      <created>1663805941757</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805941757</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fin tach in trello today">
+      <created>1663805970915</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663805970915</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add a stocker the post in class stocker">
+      <created>1663855190946</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855190946</updated>
+    </task>
+    <task id="LOCAL-00015" summary="a global class to start a menu the Game">
+      <created>1663855253015</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855253015</updated>
+    </task>
+    <task id="LOCAL-00016" summary="getGames to get all the game by categorie">
+      <created>1663855789626</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663855789626</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +230,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial project" />
     <MESSAGE value="in the run of programme added the data of game" />
-    <option name="LAST_COMMIT_MESSAGE" value="in the run of programme added the data of game" />
+    <MESSAGE value="class console to manage all the console the game" />
+    <MESSAGE value="class Ecran to manage all the Ecran the game" />
+    <MESSAGE value="class Game to manage all the GAme the gameSpace" />
+    <MESSAGE value="initial class Horaires.java" />
+    <MESSAGE value="class to create all the propriete (quantity and name)" />
+    <MESSAGE value="interface to initial the method check to check stocket" />
+    <MESSAGE value="main is a class global to stocket all the chause and run the code" />
+    <MESSAGE value="post is a class  to link all the consoles and Ecran and Game class in one class" />
+    <MESSAGE value="fin tach in trello today" />
+    <MESSAGE value="add a stocker the post in class stocker" />
+    <MESSAGE value="a global class to start a menu the Game" />
+    <MESSAGE value="getGames to get all the game by categorie" />
+    <option name="LAST_COMMIT_MESSAGE" value="getGames to get all the game by categorie" />
   </component>
 </project>
