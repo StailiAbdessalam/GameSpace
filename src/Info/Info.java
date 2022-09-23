@@ -1,14 +1,11 @@
 package Info;
 
 public class Info {
-    public int quantity;
-    public String name;
-
-
+    public String ecran;
+    public String console;
     // constructor to know data of all the stokes
-    public Info(String name, int quantity) {
-        this.name=name;
-        this.quantity=quantity;
+    public Info(String ecran, String console) {
+        this.ecran = ecran;
+        this.console = console;
     }
-
 }

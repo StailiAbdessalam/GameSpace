@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Game {
     String categorie;
     ArrayList<String> name = new ArrayList<>();
-    public static ArrayList<Game> allGame = new ArrayList<Game>();
+    public static ArrayList<Game> allGame = new ArrayList<>();
     public Game() {}
     public Game(ArrayList<String> name,String categorie) {
         this.name = name;

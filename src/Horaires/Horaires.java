@@ -1,45 +1,42 @@
 package Horaires;
-
 import interfaces.IPosts;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 public class Horaires implements IPosts {
-    @Override
-    public boolean check(String horaire) {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-        LocalDateTime now = LocalDateTime.now();
-        LocalDateTime addhoraire = now.plusHours(2);
-        String finalTime = dtf.format(addhoraire);
-        String[] infoTime = finalTime.split(" ");
-        this.checkDepartTime();
-
-        if(this.checkTime(infoTime[1],horaire)){
-            System.out.println("nice");
-        }
+    public static ArrayList<Integer>  allTime = new ArrayList<>();
+    public Horaires(ArrayList<Integer> Time) {
+        allTime=Time;
+    }
+    public Horaires(){}
+    //method to check time of depart and finaltime the player
+    public boolean checktimeOfPlay(long horaire) {
+        System.out.println(this.checkDepartTime());
+        System.out.println(this.checkFinalTime(horaire));
         return false;
     }
-
-    public boolean checkTime(String time,String horaire){
-        String[] DetailsTime = time.split(":");
-        Integer.parseInt(horaire);
-        int HourDepart =Integer.parseInt(DetailsTime[0]);
-        int Hourfinal = HourDepart+Integer.parseInt(horaire);
-        if((HourDepart>12 && HourDepart<14) ||  HourDepart<9 || HourDepart>20 ){
-            return false;
-        }
-        return true;
+    // metod return true or false si palyer is availble to play in this time
+    public boolean checkTime(long Time){
+       String TimeFinal = this.checkFinalTime(Time);
+       String[] DetailsDate = TimeFinal.split(" ");
+       String[] DetailsHour = DetailsDate[1].split(":");
+       int Hour = Integer.parseInt(DetailsHour[0]);
+       if(Hour<9 || Hour>20 || Hour>12 && Hour<14){
+           return false;
+       }
+       return true;
     }
-
-
-    public boolean checkDepartTime(){
+    public String checkDepartTime(){
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         String DeparTime = dtf.format(now);
-        System.out.println(DeparTime);
-        return false;
+        return DeparTime;
     }
-    public boolean checkFinalTime( ){
-        return false;
+    public String checkFinalTime(long horaire){
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        String finalTile = dtf.format(now.plusMinutes(horaire));
+        return finalTile;
     }
 }

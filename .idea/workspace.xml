@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="getGames to get all the game by categorie">
-      <change afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="interface to the propriter the post">
+      <change afterPath="$PROJECT_DIR$/src/Enums/Games.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Consoles/Consoles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ecrans/Ecran.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCategorie/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCategorie/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Horaires/Horaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Info/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Info/Info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/IPosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IPosts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +42,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -96,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="46442000" />
+      <workItem from="1663756333144" duration="76162000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1663756381892</created>
@@ -210,7 +216,35 @@
       <option name="project" value="LOCAL" />
       <updated>1663855789626</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="delete class console and ecran">
+      <created>1663858559634</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663858559634</updated>
+    </task>
+    <task id="LOCAL-00018" summary="class HOraire">
+      <created>1663859900815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663859900815</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add a methode timework to check the time the open a GameSpacr">
+      <created>1663888453202</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663888453202</updated>
+    </task>
+    <task id="LOCAL-00020" summary="interface to the propriter the post">
+      <created>1663888496019</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663888496019</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +276,10 @@
     <MESSAGE value="add a stocker the post in class stocker" />
     <MESSAGE value="a global class to start a menu the Game" />
     <MESSAGE value="getGames to get all the game by categorie" />
-    <option name="LAST_COMMIT_MESSAGE" value="getGames to get all the game by categorie" />
+    <MESSAGE value="delete class console and ecran" />
+    <MESSAGE value="class HOraire" />
+    <MESSAGE value="add a methode timework to check the time the open a GameSpacr" />
+    <MESSAGE value="interface to the propriter the post" />
+    <option name="LAST_COMMIT_MESSAGE" value="interface to the propriter the post" />
   </component>
 </project>
