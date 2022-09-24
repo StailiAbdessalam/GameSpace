@@ -1,11 +1,15 @@
 package affichage;
 
 import Enums.Games;
+import GameCategorie.Game;
+import Posts.Posts;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Affichage {
-    public void Presantation(){
+    public void Presantation(Game game, Posts post){
         System.out.println("************************  HI in GameSpace  ************************");
         while(true){
             System.out.println("choose your option :\n1: create a Player \n2: statistical \n3: exit");
@@ -13,7 +17,13 @@ public class Affichage {
             int choixAdmin = choix.nextInt();
             switch (choixAdmin){
                 case 1:
-                    this.chooseGame();
+                    int choixGame = this.chooseGame();
+                    if(choixGame==0){
+                        continue;
+                    }
+                    String Game = String.valueOf(Games.values()[choixGame-1]);
+                    choosePost(game.getGameByName(Game));
+
                     return;
                 case 2:
                        return;
@@ -45,15 +55,16 @@ public class Affichage {
             }else if (choixGame==5){
                 return 0;
             }else {
-                String Game = String.valueOf(Games.values()[choixGame-1]);
-
-
-
-
-
-                break;
+                return choixGame;
             }
         }
-        return 1;
+    }
+
+    public void choosePost(HashMap game){
+        System.out.println("choose your Post");
+        Object ipPost = game.get("idPost");
+        System.out.println(ipPost);
+
+
     }
 }
