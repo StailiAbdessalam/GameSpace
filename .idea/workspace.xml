@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="add date the all Game by id the post">
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="solve problem of store data">
+      <change afterPath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Posts/DetailsPosts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enums/Consoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enums/Consoles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameCategorie/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCategorie/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Posts.java" afterDir="false" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -98,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="96552000" />
+      <workItem from="1663756333144" duration="113125000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1663756381892</created>
@@ -317,7 +320,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664027625143</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add method choose post">
+      <created>1664030740579</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664030740579</updated>
+    </task>
+    <task id="LOCAL-00033" summary="send instance in a parame the presantation">
+      <created>1664030772106</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1664030772106</updated>
+    </task>
+    <task id="LOCAL-00034" summary="solve problem of store data">
+      <created>1664030793442</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1664030793442</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,9 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="class Game to manage all the GAme the gameSpace" />
-    <MESSAGE value="initial class Horaires.java" />
-    <MESSAGE value="class to create all the propriete (quantity and name)" />
     <MESSAGE value="interface to initial the method check to check stocket" />
     <MESSAGE value="main is a class global to stocket all the chause and run the code" />
     <MESSAGE value="post is a class  to link all the consoles and Ecran and Game class in one class" />
@@ -360,6 +381,9 @@
     <MESSAGE value="main the all programe" />
     <MESSAGE value="add date the all post" />
     <MESSAGE value="add date the all Game by id the post" />
-    <option name="LAST_COMMIT_MESSAGE" value="add date the all Game by id the post" />
+    <MESSAGE value="add method choose post" />
+    <MESSAGE value="send instance in a parame the presantation" />
+    <MESSAGE value="solve problem of store data" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve problem of store data" />
   </component>
 </project>
