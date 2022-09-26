@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="solve problem of store data">
-      <change afterPath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Posts/DetailsPosts.java" afterDir="false" />
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="inial class horaire to check all the time of game">
+      <change afterPath="$PROJECT_DIR$/src/Horaires/DetailsHoraires.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player/DetailsPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reservation/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enums/Consoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enums/Consoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameCategorie/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCategorie/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Horaires/Horaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="113125000" />
+      <workItem from="1663756333144" duration="154854000" />
     </task>
     <task id="LOCAL-00001" summary="initial project">
       <created>1663756381892</created>
@@ -341,7 +342,56 @@
       <option name="project" value="LOCAL" />
       <updated>1664030793442</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="create a method check the time of work">
+      <created>1664140772137</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140772137</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Details of post">
+      <created>1664140803494</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140803494</updated>
+    </task>
+    <task id="LOCAL-00037" summary="change the arraylist of hashmap">
+      <created>1664140839849</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140839849</updated>
+    </task>
+    <task id="LOCAL-00038" summary="class of Details the Game">
+      <created>1664140913566</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140913566</updated>
+    </task>
+    <task id="LOCAL-00039" summary="commit the jour">
+      <created>1664140983617</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1664140983617</updated>
+    </task>
+    <task id="LOCAL-00040" summary="inial class horaire to check all the time of game">
+      <created>1664141460880</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664141460880</updated>
+    </task>
+    <task id="LOCAL-00041" summary="inial class horaire to check all the time of game">
+      <created>1664143707264</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1664143707264</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,12 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="interface to initial the method check to check stocket" />
-    <MESSAGE value="main is a class global to stocket all the chause and run the code" />
-    <MESSAGE value="post is a class  to link all the consoles and Ecran and Game class in one class" />
-    <MESSAGE value="fin tach in trello today" />
-    <MESSAGE value="add a stocker the post in class stocker" />
-    <MESSAGE value="a global class to start a menu the Game" />
     <MESSAGE value="getGames to get all the game by categorie" />
     <MESSAGE value="delete class console and ecran" />
     <MESSAGE value="class HOraire" />
@@ -384,6 +428,12 @@
     <MESSAGE value="add method choose post" />
     <MESSAGE value="send instance in a parame the presantation" />
     <MESSAGE value="solve problem of store data" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve problem of store data" />
+    <MESSAGE value="create a method check the time of work" />
+    <MESSAGE value="Details of post" />
+    <MESSAGE value="change the arraylist of hashmap" />
+    <MESSAGE value="class of Details the Game" />
+    <MESSAGE value="commit the jour" />
+    <MESSAGE value="inial class horaire to check all the time of game" />
+    <option name="LAST_COMMIT_MESSAGE" value="inial class horaire to check all the time of game" />
   </component>
 </project>

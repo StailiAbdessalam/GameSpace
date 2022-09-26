@@ -1,4 +1,5 @@
 package GameCategorie;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class GameDetails {
@@ -6,10 +7,12 @@ public class GameDetails {
     private String Categorie;
     private int[] IdPost;
 
+
     public GameDetails(String name, String categorie, int[] idPost) {
         this.name = name;
         Categorie = categorie;
         IdPost = idPost;
+
     }
 
     public String getName() {
