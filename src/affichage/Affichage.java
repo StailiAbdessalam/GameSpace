@@ -2,15 +2,19 @@ package affichage;
 import Enums.Games;
 import GameCategorie.Game;
 import GameCategorie.GameDetails;
+import Horaires.Horaires;
+import Player.Player;
 import Posts.DetailsPosts;
 import Posts.Posts;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+import Player.DetailsPlayer;
+import Horaires.DetailsHoraires;
+import java.lang.Thread;
 
 public class Affichage {
-    public void Presantation(Game game, Posts post){
+    public void Presantation(Game game, Posts post,Player player,Horaires Time){
         System.out.println("************************  HI in GameSpace  ************************");
         while(true){
             boolean isWork = this.TimeWork();
@@ -21,21 +25,39 @@ public class Affichage {
             System.out.println("choose your option :\n1: create a Player \n2: statistical \n3: exit");
             Scanner choix = new Scanner(System.in);
             int choixAdmin = choix.nextInt();
+
             switch (choixAdmin){
                 case 1:
                     int choixGame = this.chooseGame();
                     if(choixGame==0){
                         continue;
                     }
+                    // choix 1 of Player
                     String Game = String.valueOf(Games.values()[choixGame-1]);
-                    ArrayList<DetailsPosts> postDisponible = choosePost(game.getGameByName(Game),post);
-                    this.choosePost(postDisponible);
-                    this.InfoPlayer();
+                    ArrayList<DetailsPosts> postDisponible = this.choosePostDispoible(game.getGameByName(Game),post);
+                    // choix 2 of Player
+                    int IdPostChoix = this.choosePost(postDisponible,player,post);
+                    // choix 3 of Player
+                    int choixCreneau = this.chooseCreneau(Time);
+                    long timePlayParMinute =Time.getTimeWithid(choixCreneau-1);
+                    // choix 4 of Horaire
+                    String NamePlayer = this.InfoPlayer();
+                    String Timefinish = Time.Timefinish(timePlayParMinute);
+                    player.addplayer(NamePlayer,Game,IdPostChoix,Timefinish);
 
-
-                    return;
+                    continue;
+                    //return;
                 case 2:
-                    System.out.println("attender version");
+                    //System.out.println("attender version");
+                    if(player.getAllplayer().size()==0){
+                        System.out.println("------------------Vide list---------------");
+                    }else {
+                        System.out.println("-------------Player list -------------");
+                        ArrayList<DetailsPlayer> listPlayer = player.getAllplayer();
+                        listPlayer.forEach((DetailsPlayer Oneplayer)->{
+                            System.out.println("Name Player: " +Oneplayer.getNamePlayer()+" || Game: "+Oneplayer.getGame()+ " || Time Finished: "+Oneplayer.timeFinal()+" || in : Post: "+String.valueOf(Oneplayer.getIdPost()+1));
+                        });
+                    }
                        continue;
                 case 3:
                     System.out.println("bye See you at our time");
@@ -70,45 +92,107 @@ public class Affichage {
         }
     }
 
-    public ArrayList<DetailsPosts> choosePost(GameDetails game , Posts posts){
+    public ArrayList<DetailsPosts> choosePostDispoible(GameDetails game , Posts posts){
         ArrayList<DetailsPosts> postdisponible = new ArrayList<>();
-        int[] ipPost = game.getIdPost();
-        for (int ele:ipPost){
+        int[] idPost = game.getIdPost();
+        for (int ele:idPost){
             postdisponible.add(posts.getPostById(ele));
         }
         return postdisponible;
-
     }
 
-    public int choosePost(ArrayList<DetailsPosts> postDisponible){
+    public int choosePost(ArrayList<DetailsPosts> postDisponible,Player player,Posts postClass){
         System.out.println("this is Post disponible in your Game :\nchoose your post :");
 
-        for(DetailsPosts i:postDisponible){
-            System.out.println("Post"+i.getId()+": "+"Ecran=>"+i.getEcran()+" and Console=>"+i.getConsole());
+        ArrayList<DetailsPlayer> allplayer = player.getAllplayer();
+        for(DetailsPosts post:postDisponible){
+            if(allplayer.size()!=0){
+                String posteDetail = "Post"+post.getId()+": "+"Ecran=>"+post.getEcran()+" and Console=>"+post.getConsole();
+                for(DetailsPlayer players:allplayer){
+                    if(post.getId()-1==players.getIdPost()){
+                        String timefinal = player.getAllplayer().get(players.getIdPost()).timeFinal();
+                        posteDetail+= "\033[0;33m ------playing-----\033[0m"+"end in: \033[0;32m"+timefinal+"\033[0m";
+                        break;
+                    }
+                }
+                System.out.println(posteDetail);
+            } else {
+                System.out.println("Post"+post.getId()+": "+"Ecran=>"+post.getEcran()+" and Console=>"+post.getConsole());
+            }
         }
+
         Scanner choix = new Scanner(System.in);
         int choixPost = choix.nextInt();
         int IdPost = choixPost-1;
         return IdPost;
     }
-    public void InfoPlayer(){
+    public String InfoPlayer(){
         System.out.println("enter your name :");
         Scanner input = new Scanner(System.in);
         String playerName = input.nextLine();
-        System.out.println(playerName);
+        return playerName;
     }
 
     public boolean TimeWork(){
         DateTimeFormatter forma = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        LocalDateTime timeNow = LocalDateTime.now();
-        String timeformate = timeNow.format(forma);
-        String[] DetailsTime = timeformate.split(" ");
-        String[]  justTime = DetailsTime[1].split(":");
-        int Hour = Integer.parseInt(justTime[0]);
-        System.out.println(Hour);
+        int timeNow = LocalDateTime.now().getHour();
+        int Hour =timeNow;
         if(Hour<9 ||Hour >=20 || Hour>=12 && Hour<14 ){
-            return false;
+            return true;
         }
         return true;
     }
+
+    public int chooseCreneau(Horaires time){
+
+        while (true) {
+            System.out.println("choisi votre houre :");
+            ArrayList<DetailsHoraires> allcreneau = time.getallTime();
+            int i = 1;
+            ArrayList<Integer> idcreneauvalid = new ArrayList<>();
+            for (DetailsHoraires creneau : allcreneau) {
+                int nowTime = LocalDateTime.now().plusMinutes(creneau.getTimeParminute()).getHour();
+                if (nowTime >= 20 || nowTime < 14 && nowTime >= 12 || nowTime < 9) {
+                    System.out.println(i + ": " + creneau.name + "\u001B[31m  ------invaliable-----\033[0m");
+                } else {
+                   /* if(){
+
+                    }else {
+
+                    }*/
+                    System.out.println(i + ": " + creneau.name);
+                    idcreneauvalid.add(i);
+
+                }
+                i++;
+            }
+
+            String message = "\u001B[31m---your choix invalid---\033[0m";
+            if(idcreneauvalid.size()==0){
+
+                try {
+                    System.out.println("see you tomorrow inchaelah");
+                    Thread.sleep(2000);
+                    return 0;
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }else {
+                Scanner choix = new Scanner(System.in);
+                int choixCreneau = choix.nextInt();
+                for (int id:idcreneauvalid) {
+                    if (choixCreneau != id) {
+                        System.out.println(message);
+                        break;
+                    } else {
+                        return choixCreneau;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
 }
