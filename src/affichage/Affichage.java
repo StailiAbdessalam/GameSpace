@@ -36,9 +36,12 @@ public class Affichage {
                     String Game = String.valueOf(Games.values()[choixGame-1]);
                     ArrayList<DetailsPosts> postDisponible = this.choosePostDispoible(game.getGameByName(Game),post);
                     // choix 2 of Player
-                    int IdPostChoix = this.choosePost(postDisponible,player,post);
+                    int IdPostChoix = this.choosePost(postDisponible,player);
                     // choix 3 of Player
-                    int choixCreneau = this.chooseCreneau(Time);
+                    int choixCreneau = this.chooseCreneau(Time,IdPostChoix,player);
+                    if(choixCreneau==0){
+                        continue;
+                    }
                     long timePlayParMinute =Time.getTimeWithid(choixCreneau-1);
                     // choix 4 of Horaire
                     String NamePlayer = this.InfoPlayer();
@@ -101,7 +104,7 @@ public class Affichage {
         return postdisponible;
     }
 
-    public int choosePost(ArrayList<DetailsPosts> postDisponible,Player player,Posts postClass){
+    public int choosePost(ArrayList<DetailsPosts> postDisponible,Player player){
         System.out.println("this is Post disponible in your Game :\nchoose your post :");
 
         ArrayList<DetailsPlayer> allplayer = player.getAllplayer();
@@ -115,9 +118,9 @@ public class Affichage {
                         break;
                     }
                 }
-                System.out.println(posteDetail);
+                System.out.println(posteDetail+"\033[0;32m------disponibe-----\033[0m");
             } else {
-                System.out.println("Post"+post.getId()+": "+"Ecran=>"+post.getEcran()+" and Console=>"+post.getConsole());
+                System.out.println("Post"+post.getId()+": "+"Ecran=>"+post.getEcran()+" and Console=>"+post.getConsole()+"\033[0;32m------disponibe-----\033[0m");
             }
         }
 
@@ -143,24 +146,37 @@ public class Affichage {
         return true;
     }
 
-    public int chooseCreneau(Horaires time){
+    public int chooseCreneau(Horaires time,int idpost,Player playerClass){
 
         while (true) {
-            System.out.println("choisi votre houre :");
+            System.out.println("choisi votre heure :");
             ArrayList<DetailsHoraires> allcreneau = time.getallTime();
             int i = 1;
             ArrayList<Integer> idcreneauvalid = new ArrayList<>();
+            ArrayList<DetailsPlayer> allplayer = playerClass.getAllplayer();
             for (DetailsHoraires creneau : allcreneau) {
+
+                //
+
+
+                //nextttttty
+
+
+
+
+
+                //if(allplayer.size()!=0){
+                  //  System.out.println(playerClass.getPlayerByHashMap(idpost).get(idpost).timeFinal());
+                //}
+
+
+
+
                 int nowTime = LocalDateTime.now().plusMinutes(creneau.getTimeParminute()).getHour();
-                if (nowTime >= 20 || nowTime < 14 && nowTime >= 12 || nowTime < 9) {
+                if (nowTime > 23 || nowTime < 14 && nowTime >= 12 || nowTime < 9) {
                     System.out.println(i + ": " + creneau.name + "\u001B[31m  ------invaliable-----\033[0m");
                 } else {
-                   /* if(){
-
-                    }else {
-
-                    }*/
-                    System.out.println(i + ": " + creneau.name);
+                    System.out.println(i + ": " + creneau.name+"\033[0;32m------disponibe-----\033[0m");
                     idcreneauvalid.add(i);
 
                 }
@@ -169,7 +185,6 @@ public class Affichage {
 
             String message = "\u001B[31m---your choix invalid---\033[0m";
             if(idcreneauvalid.size()==0){
-
                 try {
                     System.out.println("see you tomorrow inchaelah");
                     Thread.sleep(2000);
@@ -178,15 +193,21 @@ public class Affichage {
                     throw new RuntimeException(e);
                 }
             }else {
+                boolean isdisponible = false;
                 Scanner choix = new Scanner(System.in);
                 int choixCreneau = choix.nextInt();
                 for (int id:idcreneauvalid) {
-                    if (choixCreneau != id) {
-                        System.out.println(message);
-                        break;
+                    if (choixCreneau == id) {
+                        isdisponible=true;
+                       break;
                     } else {
-                        return choixCreneau;
+                        continue;
                     }
+                }
+                if(isdisponible){
+                     return  choixCreneau;
+                }else {
+                    System.out.println(message);
                 }
             }
 
