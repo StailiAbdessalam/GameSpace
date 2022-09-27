@@ -16,6 +16,7 @@ public  class Player{
     public ArrayList<DetailsPlayer> getAllplayer() {
             return allplayer;
     }
+
     public HashMap<Integer,DetailsPlayer> getPlayerByHashMap(int idpost){
      return AllplayerinHashMap;
     }

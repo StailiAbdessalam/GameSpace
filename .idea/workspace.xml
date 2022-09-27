@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="inial class horaire to check all the time of game">
-      <change afterPath="$PROJECT_DIR$/src/Horaires/DetailsHoraires.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player/DetailsPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reservation/Reservation.java" afterDir="false" />
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="use a new storage the allPlayer to check in the idpost in hashmap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCategorie/GameDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Horaires/Horaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
     </list>
@@ -102,14 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="154854000" />
-    </task>
-    <task id="LOCAL-00001" summary="initial project">
-      <created>1663756381892</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663756381892</updated>
+      <workItem from="1663756333144" duration="170764000" />
     </task>
     <task id="LOCAL-00002" summary="initial project">
       <created>1663756788513</created>
@@ -391,7 +379,70 @@
       <option name="project" value="LOCAL" />
       <updated>1664143707264</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add method to check validate time of reservation and method to check post validate to reservation">
+      <created>1664217751015</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1664217751015</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add class DetailsHoraires to inial object a class Horaires">
+      <created>1664217803285</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1664217803285</updated>
+    </task>
+    <task id="LOCAL-00044" summary="and make class player to add details player in a class Player">
+      <created>1664217845107</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1664217845107</updated>
+    </task>
+    <task id="LOCAL-00045" summary="class horaires to make method timefinish and getalltime">
+      <created>1664218003009</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1664218003009</updated>
+    </task>
+    <task id="LOCAL-00046" summary="called a all object to use in the class affichage">
+      <created>1664218047634</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664218047634</updated>
+    </task>
+    <task id="LOCAL-00047" summary="class player to add user in my GameSpace with your id the post the game play">
+      <created>1664218117062</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1664218117062</updated>
+    </task>
+    <task id="LOCAL-00048" summary="next">
+      <created>1664218137921</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1664218137921</updated>
+    </task>
+    <task id="LOCAL-00049" summary="now a work in part to check timefinal to empty post the game">
+      <created>1664224975679</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1664224975679</updated>
+    </task>
+    <task id="LOCAL-00050" summary="use a new storage the allPlayer to check in the idpost in hashmap">
+      <created>1664225033900</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1664225033901</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,15 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="getGames to get all the game by categorie" />
-    <MESSAGE value="delete class console and ecran" />
-    <MESSAGE value="class HOraire" />
-    <MESSAGE value="add a methode timework to check the time the open a GameSpacr" />
-    <MESSAGE value="interface to the propriter the post" />
-    <MESSAGE value="add method choix compte and choix creneau and add player" />
-    <MESSAGE value="class player to add player" />
-    <MESSAGE value="the change of logique the project" />
-    <MESSAGE value="initial working" />
     <MESSAGE value="details affichage the programme in many method" />
     <MESSAGE value="enums the consoles like xbox .." />
     <MESSAGE value="enums the ecran like dell .." />
@@ -434,6 +476,15 @@
     <MESSAGE value="class of Details the Game" />
     <MESSAGE value="commit the jour" />
     <MESSAGE value="inial class horaire to check all the time of game" />
-    <option name="LAST_COMMIT_MESSAGE" value="inial class horaire to check all the time of game" />
+    <MESSAGE value="add method to check validate time of reservation and method to check post validate to reservation" />
+    <MESSAGE value="add class DetailsHoraires to inial object a class Horaires" />
+    <MESSAGE value="and make class player to add details player in a class Player" />
+    <MESSAGE value="class horaires to make method timefinish and getalltime" />
+    <MESSAGE value="called a all object to use in the class affichage" />
+    <MESSAGE value="class player to add user in my GameSpace with your id the post the game play" />
+    <MESSAGE value="next" />
+    <MESSAGE value="now a work in part to check timefinal to empty post the game" />
+    <MESSAGE value="use a new storage the allPlayer to check in the idpost in hashmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="use a new storage the allPlayer to check in the idpost in hashmap" />
   </component>
 </project>
