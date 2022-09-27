@@ -5,8 +5,8 @@ import GameCategorie.Game;
 import Horaires.Horaires;
 import Player.Player;
 import Posts.Posts;
+import Queue.Queues;
 import affichage.Affichage;
-
 
 
 public class Main {
@@ -38,9 +38,10 @@ public class Main {
         horaires.addTime("joueur de luxe",65,540);
 
 
+        Queues allqueue = new Queues();
         Player player= new Player();
         Affichage affichage = new Affichage();
-        affichage.Presantation(game,post,player,horaires);
+        affichage.Presantation(game,post,player,horaires,allqueue);
 
     }
 
