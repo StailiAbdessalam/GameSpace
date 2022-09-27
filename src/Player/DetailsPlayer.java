@@ -9,6 +9,8 @@ public class DetailsPlayer {
 
 
 
+
+
     public DetailsPlayer(String namePlayer, String game, String timeFinal, int idPost) {
         this.namePlayer = namePlayer;
         this.game = game;

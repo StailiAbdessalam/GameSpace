@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args)
     {
 
-
         Game game = new Game();
         game.addGame(String.valueOf(Games.AssassinCreed),"Guerre",new int[]{1,3});
         game.addGame(String.valueOf(Games.CounterStrike),"Guerre", new int[]{5,6});

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment="use a new storage the allPlayer to check in the idpost in hashmap">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Horaires/Horaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horaires/Horaires.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
+    <list default="true" id="8823e4e3-93e7-4720-b69f-a4061c409539" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player/DetailsPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player/DetailsPlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,28 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663756331727</updated>
-      <workItem from="1663756333144" duration="170764000" />
-    </task>
-    <task id="LOCAL-00002" summary="initial project">
-      <created>1663756788513</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1663756788513</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial project">
-      <created>1663756834337</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1663756834337</updated>
-    </task>
-    <task id="LOCAL-00004" summary="in the run of programme added the data of game">
-      <created>1663785607218</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1663785607218</updated>
+      <workItem from="1663756333144" duration="171357000" />
     </task>
     <task id="LOCAL-00005" summary="class console to manage all the console the game">
       <created>1663805589496</created>
@@ -442,7 +419,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664225033901</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add methos to check all time the timefinal the post">
+      <created>1664239315245</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1664239315245</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add localtime variable in method to calcule current timefinal">
+      <created>1664239362742</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1664239362742</updated>
+    </task>
+    <task id="LOCAL-00053" summary=".">
+      <created>1664239377421</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1664239377421</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,9 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="details affichage the programme in many method" />
-    <MESSAGE value="enums the consoles like xbox .." />
-    <MESSAGE value="enums the ecran like dell .." />
     <MESSAGE value="enums the Games like all .." />
     <MESSAGE value="main the all programe" />
     <MESSAGE value="add date the all post" />
@@ -485,6 +480,9 @@
     <MESSAGE value="next" />
     <MESSAGE value="now a work in part to check timefinal to empty post the game" />
     <MESSAGE value="use a new storage the allPlayer to check in the idpost in hashmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="use a new storage the allPlayer to check in the idpost in hashmap" />
+    <MESSAGE value="add methos to check all time the timefinal the post" />
+    <MESSAGE value="add localtime variable in method to calcule current timefinal" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
