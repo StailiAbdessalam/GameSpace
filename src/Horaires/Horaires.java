@@ -14,9 +14,9 @@ public class Horaires {
         return allTime;
     }
 
-    public String Timefinish(long creneau){
+    public String Timefinish(long creneau,LocalTime nowtime){
         DateTimeFormatter forma = DateTimeFormatter.ofPattern("HH:mm:ss");
-        LocalTime timeNow = LocalTime.now().plusMinutes(creneau);
+        LocalTime timeNow = nowtime.plusMinutes(creneau);
         String timefiniched = timeNow.format(forma);
        return timefiniched;
     }
